@@ -2,51 +2,102 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Matrifoundation.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mohit Joshi NGO Demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <img src="logo.png" alt="Matrifoundation Logo" class="logo" />
-      <h1>Matrifoundation.com</h1>
-      <p>Empowering Education. Enabling Dreams.</p>
+      <a class="navbar-brand" href="#">Mohit Joshi NGO Demo</a>
+      <div>
+        <a href="donate.html" class="btn btn-success">Donate Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header
+    class="hero-section text-white text-center py-5"
+    style="background: url('images/hero.jpg') center/cover no-repeat;"
+  >
+    <div class="container">
+      <h1>Welcome to Mohit Joshi NGO</h1>
+      <p>Empowering communities through education and healthcare</p>
     </div>
   </header>
 
-  <section class="about">
+  <!-- About Section -->
+  <section class="py-5 bg-light">
     <div class="container">
-      <h2>About Us</h2>
-      <p>
-        Matrifoundation is a non-profit organization dedicated to supporting underprivileged students through scholarships and educational assistance. We believe that every child deserves a chance at quality education, regardless of their financial background.
+      <h2 class="text-center mb-4">About Us</h2>
+      <p class="lead text-center">
+        Mohit Joshi NGO is committed to transforming lives through education and healthcare initiatives in underserved communities.
       </p>
     </div>
   </section>
 
-  <section class="scholarship">
+  <!-- Education Section -->
+  <section class="py-5">
     <div class="container">
-      <h2>Our Scholarship Program</h2>
-      <p>
-        We offer scholarships to students from economically weaker sections who demonstrate academic potential and determination. Through partnerships with schools and donors, we ensure that deserving students get the support they need to continue their education.
-      </p>
+      <h2 class="text-center mb-4">Education</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img
+            src="images/education.jpg"
+            alt="Education"
+            class="img-fluid rounded mb-3"
+          />
+        </div>
+        <div class="col-md-6">
+          <h3>Quality Education for All</h3>
+          <p>
+            We focus on providing quality education to underprivileged children, offering scholarships, school supplies, and digital learning tools. Our mission is to break the cycle of poverty by empowering young minds with knowledge and skills.
+          </p>
+          <ul>
+            <li>Scholarship programs</li>
+            <li>Community libraries</li>
+            <li>Teacher training workshops</li>
+            <li>Digital classrooms</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="contact">
+  <!-- Healthcare Section -->
+  <section class="py-5 bg-light">
     <div class="container">
-      <h2>Get Involved</h2>
-      <p>
-        Join us in making a difference. Whether you're a student in need, a donor, or a volunteer, your support helps us reach more lives.
-      </p>
-      <a href="#" class="btn">Contact Us</a>
+      <h2 class="text-center mb-4">Healthcare</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 order-md-2">
+          <img
+            src="images/healthcare.jpg"
+            alt="Healthcare"
+            class="img-fluid rounded mb-3"
+          />
+        </div>
+        <div class="col-md-6 order-md-1">
+          <h3>Accessible Healthcare for Everyone</h3>
+          <p>
+            Our healthcare programs aim to improve access to essential medical services in rural areas. We organize health camps, vaccination drives, and awareness sessions to promote preventive care and healthy living.
+          </p>
+          <ul>
+            <li>Mobile health clinics</li>
+            <li>Vaccination drives</li>
+            <li>Health awareness workshops</li>
+            <li>Maternal and child health support</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Matrifoundation.com | All Rights Reserved</p>
-    </div>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Mohit Joshi NGO Demo. All rights reserved.</p>
   </footer>
 </body>
 </html>
