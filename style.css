@@ -1,76 +1,137 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
+/* Basic Reset & Fonts */
 body {
-  background-color: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
   color: #333;
-}
-
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: auto;
-  padding: 40px 0;
-}
-
-header {
-  background: #004080;
-  color: white;
-  text-align: center;
-  padding: 60px 0;
-}
-
-header .logo {
-  width: 100px;
-  margin-bottom: 20px;
-}
-
-header h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-.about,
-.scholarship,
-.contact {
-  background-color: white;
-  margin: 20px 0;
-  padding: 40px 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-  color: #004080;
-  margin-bottom: 15px;
-}
-
-p {
-  font-size: 1.1em;
   line-height: 1.6;
 }
 
-.btn {
+/* Navbar */
+.navbar {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  color: #ffffff !important;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.navbar .btn-success {
+  background-color: #28a745;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+  border-radius: 50px;
+}
+
+.navbar .btn-success:hover {
+  background-color: #218838;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.hero-section p {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+/* Sections */
+section {
+  padding: 60px 0;
+}
+
+section h2 {
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 30px;
+  letter-spacing: 0.05em;
+  border-bottom: 3px solid #28a745;
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background-color: #004080;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
+  padding-bottom: 5px;
 }
 
-.btn:hover {
-  background-color: #003366;
+section p.lead {
+  font-size: 1.15rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
 }
 
+/* Education & Healthcare Content */
+.row.align-items-center {
+  gap: 2rem;
+}
+
+.img-fluid {
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.img-fluid:hover {
+  transform: scale(1.05);
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: #28a745;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: disc inside;
+  color: #444;
+  font-size: 1rem;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
 footer {
-  background-color: #002244;
-  color: white;
-  text-align: center;
+  background-color: #212529;
+  color: #ccc;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
   padding: 20px 0;
+  margin-top: 60px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive tweaks */
+@media (max-width: 767px) {
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  section h2 {
+    font-size: 1.8rem;
+  }
 }
